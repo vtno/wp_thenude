@@ -1,0 +1,26 @@
+/*
+Theme Name: TheNudeBkk
+Author: Tino Thamjarat
+Author URL: http://tonytino.tumblr.com
+Description: Custom theme for The Nude BKK
+Version: 1.0
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+.main-nav ul, .main-nav li{
+    display: inline;
+}
+.main-nav a {
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+.left-img img{
+    margin-bottom: 30px;
+}
