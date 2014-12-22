@@ -24,3 +24,14 @@ Version: 1.0
 .left-img img{
     margin-bottom: 30px;
 }
+.shop-head {
+    margin-bottom: 2%;
+}
+.clear-margin-padding {
+    margin: 0 !important;
+    padding:0 !important;
+}
+.product {
+    margin: auto !important;
+    width: 50%;
+}
