@@ -34,7 +34,7 @@ do_action('woocommerce_before_main_content');
 
 <?php if (have_posts()) : ?>
 
-    <div class ="col-lg-12 shop-head"><?php
+    <div class ="col-lg-12 margin-bot-2per"><?php
     /**
      * woocommerce_before_shop_loop hook
      *
@@ -43,7 +43,7 @@ do_action('woocommerce_before_main_content');
      */
     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
-    //do_action('woocommerce_before_shop_loop');
+    do_action('woocommerce_before_shop_loop');
     
     
   
@@ -52,12 +52,21 @@ do_action('woocommerce_before_main_content');
     <?php woocommerce_product_loop_start(); ?>
 
     <?php woocommerce_product_subcategories(); ?>
-
-    <?php while (have_posts()) : the_post(); ?>
-
-        <div class = "col-lg-4 clear-margin-padding"><?php wc_get_template_part('content', 'product'); ?></div>
-
-    <?php endwhile; // end of the loop.  ?>
+    <?php $count = 0; ?>
+    <?php while (have_posts()) : the_post();?>
+    <?php if($count%4===0):
+        echo "<div class =\"row margin-bot-2per\">"; 
+        endif;
+    ?>
+        <div class = "col-lg-3"><?php wc_get_template_part('content', 'product'); $count+=1;?></div>
+        
+     <?php if($count%4===0):
+        echo "</div>";
+        endif;
+    ?>    
+    <?php endwhile; // end of the loop.
+        $count = 0;
+    ?>
 
     <?php woocommerce_product_loop_end(); ?>
 

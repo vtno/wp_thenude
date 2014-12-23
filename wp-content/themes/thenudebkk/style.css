@@ -24,8 +24,11 @@ Version: 1.0
 .left-img img{
     margin-bottom: 30px;
 }
-.shop-head {
+.margin-bot-2per {
     margin-bottom: 2%;
+}
+.margin-left-2per {
+    margin-left: 2%;
 }
 .clear-margin-padding {
     margin: 0 !important;
@@ -33,5 +36,21 @@ Version: 1.0
 }
 .product {
     margin: auto !important;
-    width: 50%;
+}
+.products {
+    margin: auto !important;
+    width: auto !important;
+    display:inline;
+}
+.product li a, .product li {
+     text-decoration: none !important;
+}
+.page-number, .page-numbers li{
+    display: inline !important;
+    width: 10%;
+    margin-right: 10px;
+} 
+.amount {
+    color: black;
+    margin-right: 2%
 }
