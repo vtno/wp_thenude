@@ -43,7 +43,7 @@ Version: 1.0
     display:inline;
 }
 .product li a, .product li {
-     text-decoration: none !important;
+    text-decoration: none !important;
 }
 .page-number, .page-numbers li{
     display: inline !important;
@@ -53,4 +53,47 @@ Version: 1.0
 .amount {
     color: black;
     margin-right: 2%
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-cell {
+    flex:1;
+}
+.flex-cell-top {
+    align-self:flex-start;
+}
+.flex-cell-bot {
+    align-self:flex-end;
+}
+.stretch {
+    align-items: stretch;
+    flex-direction: column;
+}
+.border {
+    border: solid 1px black;
+    padding: 0 0 0 10px;
+    background-color: #f3f3f3;
+}
+@media(max-width:1200px){
+    .top-logo{
+        display: none;
+    }
+    .margin-bot-mobile{
+        margin-bottom: 2%;
+    }
+}
+.margin-top-2per {
+    margin-top: 2%;
+}
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
 }

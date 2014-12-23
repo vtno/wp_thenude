@@ -16,6 +16,22 @@
     </head>
     <body>
         <div class ="container">
+            <section class="row margin-bot-2per">
+                <div class="col-lg-4">
+                   
+                    <form role="search" method="get" id="searchform" action="<?php echo esc_url(home_url('/')); ?>">
+                        <div>
+                            <label style ="margin-right: 10px;" class="screen-reader-text" for="s"><?php _e(' <span class="glyphicon glyphicon-search" aria-hidden="true"></span>', 'woocommerce'); ?></label>
+                            <input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="<?php _e('Search for products', 'woocommerce'); ?>" />
+                            <input type="submit" id="searchsubmit" value="<?php echo esc_attr__('Search'); ?>" />
+                            <input type="hidden" name="post_type" value="product" />
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4 pull-right top-logo">
+                    <a href ="<?php echo get_option('home'); ?>"><img alt = "Brand" class ="img-responsive" src = "<?php bloginfo('template_url') ?>/images/logo.jpg"/></a>
+                </div>
+            </section>
             <header>
                 <nav class="navbar navbar-default" role = "navigation">
                     <div class="container-fluid">
