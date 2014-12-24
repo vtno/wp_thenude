@@ -1,5 +1,19 @@
 <?php get_header(); ?>
 <section class ="row  margin-bot-2per">
+    <div class="col-lg-12">
+        <a href = "<?php bloginfo('url')?>/christmas-bundle"><img src="<?php bloginfo('template_url') ?>/images/banner.jpg" class = "img-responsive"></a>        
+    </div>
+</section>
+<section class = "row margin-bot-2per">
+    <div class="col-sm-6">
+        <img src="<?php bloginfo('template_url') ?>/images/1.jpg" class = "img-responsive flex-cell-top margin-bot-2per">
+    </div>
+    <div class="col-sm-6">
+        <img src="<?php bloginfo('template_url') ?>/images/33.jpg" class = "img-responsive flex-cell-bot">
+    </div> 
+            
+</section>
+ <!--
     <div class="flex-container">
         <div class="col-lg-4 flex-container">
             <img src="<?php bloginfo('template_url') ?>/images/1.jpg" class = "img-responsive flex-cell-top margin-bot-2per">
@@ -14,6 +28,7 @@
         </div>
     </div>
 </section>
+ -->
 <section class ="margin-bot-2per">
     <h1 class ="h1">New Arrivals</h1>
 </section>

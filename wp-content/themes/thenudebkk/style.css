@@ -97,3 +97,6 @@ hr {
     border-color: black;
     border-width: 2px;
 }
+.flex-col {
+    flex-direction: column;
+}

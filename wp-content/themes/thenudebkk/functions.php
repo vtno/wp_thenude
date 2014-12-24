@@ -130,6 +130,12 @@ function custom_recent_products($atts) {
 }
 
 add_shortcode('home_recent_products', 'custom_recent_products');
+
+add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
+function wcs_woo_remove_reviews_tab($tabs) {
+ unset($tabs['reviews']);
+ return $tabs;
+}
 //remove css from woocommerce
 // Remove each style one by one
 /*
